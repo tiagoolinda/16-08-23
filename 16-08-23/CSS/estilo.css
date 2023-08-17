@@ -1,0 +1,65 @@
+#titulo {
+    color: white;
+    size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 18, 1) 66%, rgba(0, 212, 255, 1) 100%);
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+   display: flex;
+    border-style: solid;
+    border-color: red rgb(12, 12, 12) blue rgb(20, 20, 20); /* red top, green right, blue bottom and yellow left */
+    margin: 30px;
+    border: 1px solid black;
+    outline: 1px solid rgb(12, 12, 12);
+    outline-offset: 5px;
+  
+   
+
+}
+#img{
+    display: flex;
+    justify-content: center;
+
+}
+
+#img img{
+    
+    height: auto;
+    width: 600px;
+}
+
+
+#relatorio {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+#relatorio p {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3be2e2;
+}
+
+.botao_div {
+    display: flex;
+    justify-content: center;
+}
+
+#botao {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #0a0a0a;
+    width: 250px;
+    background-color: #b6b6b2;
+    border-radius: 5px;
+}
+
+#botao:hover {
+    background-color: #0e0d0d;
+    animation: tremer .10s;
+    color: rgb(253, 251, 251);
+}
