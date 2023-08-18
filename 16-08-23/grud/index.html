@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="CSS/botao.css">
+    <link rel="stylesheet" href="CSS/grava.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/modal.css">
     <title>CRUD</title>
-
-    <link rel="stylesheet" href="/CSS/botao.css">
-    <link rel="stylesheet" href="/CSS/grava.css">
-    <link rel="stylesheet" href="/CSS/main.css">
-    <link rel="stylesheet" href="/CSS/modal.css">
-
 </head>
 
 <body>
@@ -19,9 +19,9 @@
     </header>
 
     <main>
-        <button class="" type="button" id="cadastrarCliente">Cadastrar</button>
+        <button class="button blue mobile" type="button" id="cadastrarCliente">Cadastrar</button>
 
-        <table id="tableClient" class="gravar">
+        <table id="tableClient" class="">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -36,28 +36,33 @@
             </tbody>
         </table>
 
-        <div class="modal" id="modal">
+        <div id="modal">
             <div class="modal-content">
-                <header class="modal header">
+                <header class="modal-header">
                     <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
-                <form action="" id="form" class="modal">
+
+                <form id="form" class="">
                     <input type="text" id="nome" class="modal-field" placeholder="Nome do cliente" required>
                     <input type="email" id="email" class="modal-field" placeholder="Email do cliente" required>
                     <input type="tel" id="celular" class="modal-field" placeholder="Celular do cliente" required>
                     <input type="text" id="cidade" class="modal-field" placeholder="Cidade do cliente" required>
                 </form>
 
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green"></button>
-                    <button id="cancelar" class="button blue"></button>
+                <footer class="">
+                    <button id="salvar" class="">Salvar</button>
+                    <button id="cancelar" class="">Cancelar</button>
                 </footer>
 
             </div>
-
         </div>
 
-    </main>
+        
+
+
+
+         </main>
     <footer>
         Copyright &copy; Tiago Olinda
     </footer>
