@@ -18,15 +18,14 @@
     z-index: 1;
 }
 
-
 .modal-content {
     display: flex;
     flex-direction: column;
     width: 50vw;
     margin: 15vh auto;
     padding-bottom: 20px;
-    background-color: white;
-    box-shadow: 1px 1px 10px black;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px #000000;
     gap: 20px;
 }
 
@@ -46,6 +45,8 @@
     height: 40px;
     text-align: center;
     cursor: pointer;
+    display: block;
+    user-select: none;
 }
 
 .modal-close:hover {
@@ -53,19 +54,52 @@
     color: #fff;
 }
 
-.modal-form{
-display: flex;
-padding: 0 20px;
-gap:20px;
-justify-content: space-between;
-flex-wrap: wrap
+.modal-form {
+    display: flex;
+    padding: 0 20px;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap
 }
 
-.modal-field{
-    width:(50%-10px) ;
+.modal-field {
+    width: calc(50% - 10px);
     height: 40px;
+    outline-style: none;
     border-style: none;
-    box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px #000000;
     padding: 0 10px;
     font-size: 1rem;
+}
+
+.modal-field:focus {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+}
+
+.model-footer {
+    background-color: inherit;
+    text-align: right;
+    padding: 0 20px;
+}
+
+@media (max-width:780px) {
+    .modal {
+        top: 100%;
+        transition: all 1s ease;
+    }
+
+    modal.active {
+        top: 0;
+    }
+
+    .modal-content {
+        margin: 0;
+        width: 100%;
+        position: fixed;
+    }
+
+    .modal-field {
+        width: 100%;
+    }
 }
